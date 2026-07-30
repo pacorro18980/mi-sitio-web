@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco Reyes - Pintor Artista</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1a252f;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            font-style: italic;
+            color: #bdc3c7;
+        }
+        .container {
+            max-width: 960px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        section {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* --- NUEVO: Estilos para la Galería de Fotos --- */
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .galeria-item {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            text-align: center;
+        }
+        .galeria-item img {
+            width: 100%;
+            height: 220px; /* Altura fija para que todas las tarjetas se vean iguales */
+            object-fit: cover; /* Recorta la imagen limpiamente para que encaje sin deformarse */
+            display: block;
+            background-color: #eaeded; /* Color de fondo por si la imagen tarda en cargar */
+        }
+        .galeria-item p {
+            padding: 0.8rem;
+            margin: 0;
+            font-size: 0.95rem;
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* Grid para el contacto y datos */
+        .grid-contacto {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .contacto-item {
+            background: #f4f6f7;
+            padding: 1rem;
+            border-radius: 6px;
+        }
+        .contacto-item strong {
+            display: block;
+            color: #2c3e50;
+            margin-bottom: 0.25rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1a252f;
+            color: #fff;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Francisco Reyes Almagro</h1>
+        <p>Pintor Artista - Estilo Neoimpresionista</p>
+    </header>
+
+    <div class="container">
+
+        <section id="biografia">
+            <h2>Biografía</h2>
+            <p>Nació Francisco Reyes en Alcalá de los Gazules, Cádiz. Se define como un pintor autodidacta con una profunda sensibilidad artística desde su infancia. Más adelante cambió de tierras y su entorno pasó a ser olotense (Girona, Cataluña). Dos tierras diferentes y dos luces distintas que han marcado su trayectoria, desarrollando la mayor parte de su carrera expositora en Cataluña.</p>
+            <p>A través de su pintura describe los paisajes catalanes y andaluces, los pequeños puertos del Mediterráneo, la agreste costa, barcas y yates, así como tierras del interior y espacios abiertos. Es un paisajista y marinista de amplio registro, caracterizado por una obra de alegre cromatismo y una excelente conjugación del color y la luz.</p>
+        </section>
+
+        <section id="publicaciones">
+            <h2>Publicaciones y Diccionarios</h2>
+            <ul>
+                <li>Diccionario Gal Art Artistas y Exposiciones (96-97 y 2002-2003)</li>
+                <li>Pintores del Siglo XXI (Primer y Tercer tomo)</li>
+                <li>Artista Catalunya (2001)</li>
+                <li>Plástica Latina Salón International Du Val D'Or (2002-2003)</li>
+            </ul>
+        </section>
+
+        <section id="critica">
+            <h2>Crítica Artística</h2>
+            <p><strong>Visión Impresionista:</strong> Nos ofrece una visión vibrante y siempre impactante de los temas que le inspiran. Su pincel se mueve nervioso, multiplica manchas, precisa y determina, dejando que la atmósfera y el titileo de la luz adquieran un valor especial en sus telas altamente luminosas.</p>
+            <p><strong>Maestro del Color:</strong> De escuela impresionista, de pintura espontánea y paleta sencilla y colorista, hacen de sus marinas, las Ramblas de Barcelona y temas urbanos, un exponente de la pintura Mediterránea. Todo en sus cuadros es equilibrado, reflejando las costumbres de nuestro litoral con un lenguaje pictórico generoso.</p>
+        </section>
+
+        <section id="exposiciones">
+            <h2>Exposiciones y Colecciones</h2>
+            <p><strong>Exposiciones Individuales:</strong> Ribes de Freser, Roses, Blanes, Lloret de Mar, Sant Feliu de Guíxols, Terrassa, Banyoles, Cambrils, Sant Joan les Fonts, Torroella de Montgrí, Estartit, Pineda de Mar, Pals, Ampuriabrava, Mojácar, Vera, Toulouse (Francia), Baziege (Francia), Carcassonne (Francia), Colliure (Francia), Barcelona, Olot, Tossa de Mar, Cádiz, Almería, París (Francia), Marbella, San José y Carboneras.</p>
+            <p><strong>Exposiciones Colectivas:</strong> Barcelona, Olot, Tossa de Mar y Toulouse (Francia).</p>
+            <p>Muchos de sus cuadros se encuentran distribuidos en importantes colecciones privadas de España, Alemania, Francia, Suiza, Bélgica e Inglaterra.</p>
+            
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 1.5rem 0;">
+            
+            <p><strong>Enlaces de interés y prensa:</strong></p>
+            <ul>
+                <li><a href="https://www.aytotarifa.com/2011/08/24/nueva-muestra-de-pintura-en-la-antigua-carcel-real-de-tarifa/" target="_blank" rel="noopener noreferrer">Nueva muestra de pintura en la Antigua Cárcel Real de Tarifa (Ayuntamiento de Tarifa)</a></li>
+                <li><a href="https://www.arteosma.com/reyes/" target="_blank" rel="noopener noreferrer">Perfil y obra de Francisco Reyes en Arteosma</a></li>
+            </ul>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería de Obras</h2>
+            <div class="galeria-grid">
+                
+                <div class="galeria-item">
+                    <img src="imagenes/foto1.jpg" alt="Marina - Francisco Reyes">
+                    <p>Isleta del Moro</p>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="imagenes/foto2.jpg" alt="Paisaje - Francisco Reyes">
+                    <p>Rambla de barcelona</p>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="imagenes/foto3.jpg" alt="Puerto - Francisco Reyes">
+                    <p>Pescadoras</p>
+                </div>
+
+                </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Información de Contacto</h2>
+            <div class="grid-contacto">
+                <div class="contacto-item">
+                    <strong>Dirección:</strong>
+                    Calle Medina Azahara, 4<br>
+                    Mojácar Playa, Almería, España
+                </div>
+                <div class="contacto-item">
+                    <strong>Teléfono Móvil:</strong>
+                    690257899
+                </div>
+                <div class="contacto-item">
+                    <strong>Correo Electrónico:</strong>
+                    <a href="mailto:paco_reyes_18980@hotmail.com">paco_reyes_18980@hotmail.com</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Francisco Reyes Almagro - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
